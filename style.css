@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+}
+
+.col-1,
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col-1 {
+  padding: 40px;
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.col-2 {
+  padding: 40px 80px;
+  background-image: url(images/music.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+.search-icon {
+  width: 25px;
+}
+
+.left-text {
+  width: 80%;
+}
+
+.left-text h1 {
+  font-size: 42px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.left-text p {
+  margin: 30px 0;
+  line-height: 1.5;
+}
+
+.left-text a img {
+  width: 50px;
+  margin-right: 15px;
+}
+
+.left-text a {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.left-text a:hover {
+  text-decoration: underline;
+}
+
+.col-2 ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col-2 ul li a {
+  margin: 0 5px 20px;
+  padding: 8px 15px;
+  display: inline-block;
+  text-decoration: none;
+  border: 3px solid #fff;
+  color: #333;
+}
+
+.col-2 ul li a.active,
+.col-2 ul li a:hover {
+  border-color: #ff5a5a;
+}
+
+.right-text h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.right-text h3 {
+  margin-block: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+.right-text p {
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.right-text a {
+  padding: 15px 50px;
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #ff5a5a;
+  box-shadow: 0 5px 10px rgba(255, 90, 90, 0.7);
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.right-text a:hover {
+  transform: translateY(-10px);
+}
